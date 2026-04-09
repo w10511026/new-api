@@ -33,9 +33,6 @@ services:
       retries: 20
 
   new-api:
-    build:
-      context: .
-      dockerfile: Dockerfile
     image: new-api-custom:latest
     container_name: new-api
     restart: always
